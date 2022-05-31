@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_productos">
+
+    <fragment
+        android:id="@+id/nav_productos"
+        android:name="com.scd.myspa.ui.productos.FragmentProductos"
+        android:label="@string/menu_productos"
+        tools:layout="@layout/fragment_productos" />
+
+    <fragment
+        android:id="@+id/nav_clientes"
+        android:name="com.scd.myspa.ui.clientes.FragmentClientes"
+        android:label="@string/menu_clientes"
+        tools:layout="@layout/fragment_clientes" />
+
+    <fragment
+        android:id="@+id/nav_empleados"
+        android:name="com.scd.myspa.ui.empleados.FragmentEmpleados"
+        android:label="@string/menu_empleados"
+        tools:layout="@layout/fragment_empleados" />
+
+    <fragment
+        android:id="@+id/nav_salas"
+        android:name="com.scd.myspa.ui.salas.FragmentSalas"
+        android:label="@string/menu_salas"
+        tools:layout="@layout/fragment_salas" />
+
+    <fragment
+        android:id="@+id/nav_sala_detalle"
+        android:name="com.scd.myspa.ui.salas.FragmentSalaDetalle"
+        android:label="Detalle de Sala"
+        tools:layout="@layout/fragment_sala_detalle" />
+</navigation>
